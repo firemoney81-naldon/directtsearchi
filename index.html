@@ -1,23 +1,497 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+   <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://finance.reliabledone.com/car-insurance-accident-surcharge"
+      },
+      "headline": "2026년 자동차 보험 사고 할증 기준 분석과 효율적인 요율 관리 가이드",
+      "image": [
+        "https://finance.reliabledone.com/images/surcharge-main.jpg"
+      ],
+      "datePublished": "2026-06-24T09:00:00+09:00",
+      "dateModified": "2026-06-24T09:00:00+09:00",
+      "author": {
+        "@type": "Organization",
+        "name": "금융정보기획팀"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "자동차 금융 안전 가이드",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://finance.reliabledone.com/logo.png"
+        }
+      },
+      "description": "2026년 최신 개정된 자동차 보험 사고 할증 제도와 물적사고 할증기준금액 200만원 설정 시의 실질적 혜택을 상세히 분석합니다. 연령별 및 모델별 요율 변화부터 합리적인 할인 갱신 팁을 제공합니다."
+    }
+    </script>
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --secondary-color: #0d9488;
+            --accent-color: #f59e0b;
+            --background-color: #f8fafc;
+            --card-background: #ffffff;
+            --text-color: #1e293b;
+            --light-border: #cbd5e1;
+            --highlight-bg: #f0fdfa;
+            --font-family: 'Noto Sans KR', 'Segoe UI', Arial, sans-serif;
+        }
+
+        body { 
+            font-family: var(--font-family); 
+            line-height: 1.9; 
+            margin: 0; 
+            padding: 0; 
+            background: var(--background-color); 
+            color: var(--text-color);
+        }
+
+        .container { 
+            max-width: 1000px; 
+            margin: 30px auto; 
+            padding: 0 20px; 
+        }
+
+        header {
+            background: var(--card-background); 
+            border-radius: 12px; 
+            border: 1px solid var(--light-border);
+            padding: 40px; 
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        header h1 { 
+            color: var(--primary-color); 
+            font-size: 2.2em; 
+            margin: 0 0 15px 0;
+            line-height: 1.4;
+        }
+
+        header p { 
+            font-size: 1.1em; 
+            color: #475569; 
+            margin: 0;
+        }
+
+        nav {
+            background: var(--card-background);
+            border-radius: 12px;
+            border: 1px solid var(--light-border);
+            padding: 15px 20px;
+            margin-bottom: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav a {
+            color: var(--primary-color);
+            font-weight: 500;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            background: #f1f5f9;
+            transition: all 0.2s ease;
+            font-size: 0.95em;
+        }
+
+        nav a:hover {
+            background: var(--secondary-color);
+            color: #ffffff;
+        }
+
+        section { 
+            background: var(--card-background); 
+            border-radius: 12px; 
+            border: 1px solid var(--light-border);
+            padding: 35px; 
+            margin-bottom: 30px;
+        }
+
+        h2 { 
+            color: var(--primary-color); 
+            font-size: 1.6em; 
+            margin-top: 0;
+            margin-bottom: 20px; 
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        h3 { 
+            color: var(--secondary-color); 
+            font-size: 1.25em; 
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+        
+        p {
+            text-align: justify;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #334155;
+        }
+
+        ul, ol {
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding-left: 20px;
+            color: #334155;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 25px 0; 
+            font-size: 0.95em;
+        }
+
+        th, td { 
+            border: 1px solid var(--light-border); 
+            padding: 14px; 
+            text-align: center; 
+        }
+
+        th { 
+            background: #f1f5f9; 
+            color: var(--primary-color); 
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .btn-cta {
+            display: inline-block;
+            padding: 15px 35px;
+            background: var(--secondary-color);
+            color: #ffffff;
+            font-weight: 700;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+            text-align: center;
+            border: none;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+
+        .btn-cta:hover {
+            background: #0f766e;
+        }
+
+        .cta-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        form label { 
+            display: block; 
+            margin-top: 15px; 
+            margin-bottom: 6px; 
+            font-weight: 600; 
+            color: var(--primary-color);
+        }
+
+        form input[type="text"], 
+        form input[type="tel"], 
+        form input[type="number"], 
+        form select, 
+        form textarea {
+            width: 100%; 
+            padding: 12px; 
+            border: 1px solid var(--light-border); 
+            border-radius: 6px; 
+            box-sizing: border-box; 
+            font-size: 1em;
+            background-color: #f8fafc;
+            color: var(--text-color);
+        }
+
+        form input:focus, 
+        form select:focus, 
+        form textarea:focus {
+            border-color: var(--secondary-color);
+            background-color: #ffffff;
+            outline: none;
+        }
+
+        .highlight-box {
+            background: var(--highlight-bg); 
+            border-left: 4px solid var(--secondary-color);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: #0f766e;
+            font-weight: 500;
+        }
+        
+        .external-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .external-links li {
+            margin-bottom: 12px;
+        }
+
+        .external-links a {
+            color: var(--secondary-color); 
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid var(--secondary-color);
+            transition: color 0.2s;
+        }
+
+        .external-links a:hover {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
+        }
+        
+        @media(max-width: 768px) {
+            header { padding: 25px; }
+            header h1 { font-size: 1.7em; }
+            section { padding: 20px; }
+            nav ul { gap: 10px; }
+            nav a { padding: 6px 12px; font-size: 0.85em; }
+            th, td { padding: 10px; font-size: 0.85em; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>2026년 자동차 보험 사고 할증 기준 분석과 효율적인 요율 관리 가이드</h1>
+            <p>개정된 자동차보험 약관 분석과 차종별, 연령별 맞춤형 대응 방안을 통한 유지비 최소화 전략</p>
+        </header>
+
+        <nav aria-label="메인 내비게이션">
+            <ul>
+                <li><a href="#trend-analysis">2026년 업계 동향</a></li>
+                <li><a href="#grade-system">할인할증 등급 구조</a></li>
+                <li><a href="#limit-standard">물적사고 할증기준금액</a></li>
+                <li><a href="#model-scenarios">차종 및 연령별 영향</a></li>
+                <li><a href="#community-tips">유저 경험 분석</a></li>
+                <li><a href="#trust-sites">참고 사이트</a></li>
+                <li><a href="#consulting-form">맞춤형 컨설팅 신청</a></li>
+            </ul>
+        </nav>
+
+        <section id="trend-analysis">
+            <h2>2026년 자동차 보험 시장 동향 및 사고 보상 제도의 근본적 변화</h2>
+            <p>
+                매년 차주들의 의무적 지출 항목 중 상당 부분을 점유하는 차량 유지비용은 매해 산출 구조가 정밀하게 조율됩니다. 특히 2026년 초 국내 주요 5대 대형 손해보험사인 삼성화재, 현대해상, DB손해보험, KB손해보험, 메리츠화재는 자동차보험 기본 보험료 요율을 일제히 1.3퍼센트에서 1.4퍼센트가량 인상하였습니다. 수년간 이어지던 안정적인 완화 기조를 뒤로하고 인상 방향으로 전환된 만큼, 사고 이후 운전자에게 누적 부과되는 자동차 보험 사고 할증 제도를 투명하게 숙지하는 것이 지출 보전의 핵심 과제가 되었습니다.
+            </p>
+            <p>
+                더불어 2026년 5월부터는 경상환자(상해 등급 12급에서 14급에 해당하는 경미 부상자)에 대한 자동차보험 표준약관 개정안이 대대적으로 본격 도입되어 지급 기준이 한층 고도화되었습니다. 변경의 핵심 골자는 의학적인 근거 중심의 적극적인 사정 심사 체계 구축입니다. 주관적인 통증 호소만으로 합의금 명목의 과도한 보상이 주어지던 관행적인 향후치료비 지급이 경상환자에게는 원칙적으로 완전 폐지되거나 강력하게 제한되기 시작했습니다. 이는 사고 직후 치료비 과잉 누수로 인한 무분별한 보상금 유출을 방지하여 전체 운전자의 비용 부담을 장기적으로 경감하는 선순환을 기대하는 조치입니다. 그러나 이러한 거시적 조치 속에서도 개인의 실수로 야기된 개별 사고는 할인할증등급 강등과 직결되므로 요율 관리의 기초를 단단히 다져야 합니다.
+            </p>
+            <div class="highlight-box">
+                <p>금융당국의 지침 분석 결과에 따르면, 새로운 표준약관 적용은 과도한 과잉 진료에 따른 보험금 지급 누수를 예방하여 중장기적으로 일반 무사고 가입자들에게 약 3퍼센트 가량의 전체 요율 인하 혜택을 돌려주는 긍정적인 반대급부를 형성하는 것으로 조사되었습니다.</p>
+            </div>
+        </section>
+
+        <section id="grade-system">
+            <h2>우량할인 및 불량할증 등급 제도의 작동 원리</h2>
+            <p>
+                우리가 납부하는 최종 금액 산정의 근원적인 척도는 할인할증 등급입니다. 국내의 우량할인 및 불량할증등급제도는 가입자의 사고 경력에 기하여 1등급부터 29등급까지의 구간으로 분류하여 차등 적용하고 있습니다. 처음 신규로 가입하는 초보 운전자는 기본값인 11등급을 부여받게 되며, 1년간 아무런 사고를 발생시키지 않을 경우 매년 점진적으로 등급이 한 계단씩 수직 상승하게 됩니다. 최고 단계인 29등급에 가깝게 근접할수록 적용 요율이 초기 대비 30퍼센트대까지 낮아지게 되어 실질 유지 가격을 획기적으로 낮출 수 있습니다.
+            </p>
+            <p>
+                반대로 운행 도중 중대한 대인 혹은 대물 피해를 입히는 사고가 유발되면 해당 건의 피해 크기에 맞춘 사고 점수가 합산 산출되며 등급이 가차 없이 삭감됩니다. 등급이 하나 떨어질 때마다 다음 해 청구되는 평균 고지서는 약 7퍼센트에서 10퍼센트 안팎의 상승폭을 경험하며, 일차적으로 강등이 이루어진 뒤에는 무려 3년이라는 긴 세월 동안 우량 할인 복귀가 원천 차단되는 동결 상태가 지속됩니다. 이러한 요율의 세밀한 차이는 사고 당사자들의 다음 해 예산에 큰 영향을 주기 마련입니다.
+            </p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>등급 분류 구분</th>
+                        <th>안내 요율 적용 비중</th>
+                        <th>안전 등급 상승 및 강등 특징</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>최하위 불량 구간 (1등급 ~ 10등급)</td>
+                        <td>200% ~ 87.8%</td>
+                        <td>지속적인 중대 사고 누적 시 진입하며 가장 불리한 고율의 부담 의무 발생</td>
+                    </tr>
+                    <tr>
+                        <td>최초 신규 가입 기본 등급 (11등급)</td>
+                        <td>82.8%</td>
+                        <td>최초 가입자에게 기본 제공되는 참조 표준 요율 기준값</td>
+                    </tr>
+                    <tr>
+                        <td>중간 안정 구간 (12등급 ~ 20등급)</td>
+                        <td>71.2% ~ 50% 수준</td>
+                        <td>3년 이상 장기 무사고 경력이 유지될 때 통과하는 주력 할인 등급군</td>
+                    </tr>
+                    <tr>
+                        <td>최상위 우량 구간 (21등급 ~ 29등급)</td>
+                        <td>40% ~ 30% 이하</td>
+                        <td>고도의 안전 운전 습관 장기 유지를 통해 제일 저렴한 비용의 혜택 체감 가능</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="limit-standard">
+            <h2>물적사고 할증기준금액 200만 원 설정의 양면성</h2>
+            <p>
+                가입을 고민할 때 다들 선택하는 물적사고 할증기준금액은 대개 50만 원, 100만 원, 150만 원, 200만 원 네 종류로 구분되어 존재합니다. 대부분의 똑똑한 가입자들은 가장 넓은 완충 장치를 얻기 위해 제일 높은 상한선인 200만 원 설정을 택하게 됩니다. 만약 불의의 대물 충돌이나 자차 훼손이 발생했을 때 지급되는 총액이 이 한계점인 200만 원 이하 범위 내에 수렴한다면 할인할증등급의 강등을 유발하는 정식 등급 하락은 전면 면제받게 됩니다. 이를 두고 일반인들은 흔히 아무런 할증이 전혀 작용하지 않는 안전한 구간이라고 오인하는 경향이 있습니다.
+            </p>
+            <p>
+                하지만 실제 보험 가격이 책정되는 수식 구조는 그리 평면적이지 않습니다. 한도 내 소액 결제가 이루어질지라도 사고 점수 0.5점이 별도로 부과되며, 이와 무관하게 사고건수요율 및 직전 3개년 무사고 할인 누락이 반영되어 매년 가입 시 제공되던 주행거리 마일리 지나 안전 보장 디스카운트 폭이 일시에 정지됩니다. 그 결과 당장 등급은 하락하지 않았음에도 불구하고 총 납부 금액 기준으로는 무사고 대비 최소 10퍼센트 이상 높은 요율을 고스란히 추가 감내해야 하는 차이점을 보입니다. 만일 누적 수리비가 단 1원이라도 200만 원의 제한 한계선을 이탈하게 된다면 정식 점수 1점이 가산되어 등급 자체가 한 등급 완벽히 떨어지고, 이듬해에 약 20퍼센트에서 30퍼센트에 이르는 실질 요율 부담의 폭탄을 피할 방법이 없게 됩니다.
+            </p>
+        </section>
+
+        <section id="model-scenarios">
+            <h2>모델별 및 연령별 맞춤형 사고 요율 모의 분석</h2>
+            <p>
+                차량이 처한 가치 보존 수준과 차주의 신분적 연령 특성에 따라서 사고 처리 이후 부과되는 실질적인 유지비 상승의 진폭은 매우 복잡한 굴곡을 나타냅니다. 대표적인 네 가지 시나리오를 통해 그 인과 관계를 더욱 면밀히 규명해 보겠습니다.
+            </p>
+            
+            <h3>첫째, 20대 신규 운전자의 아반떼 적용 시나리오</h3>
+            <p>
+                비교적 운전 경력이 짧고 사고 위험률 통계 수치가 취약한 20대 초반 가입자들은 통상 아반떼 준중형 모델을 기반으로 생애 신규 가입을 이행하는 편입니다. 이 시기에 자차 항목을 포함한 평균 초기 견적을 받아보면 연간 납부액이 대략 150만 원에서 220만 원 선의 높은 수준으로 책정됩니다. 이러한 초년생 신분에서 소액 접촉사고를 일으켜 대물 피해 복구로 단 한 번이라도 보험금 지급이 실행된다면, 다음 갱신 시 예상되는 고지 금액은 최대 300만 원 선까지 가파르게 치솟을 수 있습니다. 경미한 실수가 자칫 자립을 저해하는 심각한 비용 누출로 파급되는 만큼, 자신의 실제 나이대 요율을 사전에 모바일 어플이나 다이렉트 전용 계산기 앱으로 세밀하게 구동하여 가상의 변화액이 얼마 정도 될지 수시로 시뮬레이션해 두는 습관이 필수입니다.
+            </p>
+
+            <h3>둘째, 30대 주력 가입자의 그랜저 및 제네시스 중형급 시나리오</h3>
+            <p>
+                안정된 자산을 구축한 30대 회사원들은 주로 중대형 세단인 그랜저 차량이나 고급 브랜드 모델인 제네시스 G80 라인업을 자가 차량으로 선택하여 운용합니다. 30대 구간은 기본 운전 경력이 5년 이상 충분히 축적되어 가장 안정화된 등급을 공유하는 시점입니다. 여러 관련 커뮤니티의 내돈내산 수많은 가입 후기를 종합해 보면 지점 설계사를 거쳐 면대면 계약을 맺는 수수료 지출보다 온라인 전문 다이렉트 가입 사이트를 비교 검색하여 저렴한곳 위주로 신중하게 선별 가입하는 비중이 매우 두드러집니다. 이들의 경우 제네시스 수준의 중대형 차량으로 사고가 나 수백만 원 대의 정비가 불가피할 때, 수리비 일부를 자비로 사전 상환하여 사고 기록 자체를 원천 삭제하는 환입 제도의 명확한 장단점을 정확히 상담 및 컨설팅받아 설계하는 대책이 권장됩니다.
+            </p>
+
+            <h3>셋째, 40대와 50대 가장의 쏘렌토 및 카니발 다인승 패밀리카 시나리오</h3>
+            <p>
+                가정을 이룬 40대와 50대 중장년 세대는 자녀 동반과 레저 목적에 최적화된 스포츠유틸리티 차량 쏘렌토 또는 미니밴 카니발 등의 차종을 흔히 선호합니다. 이 연령대에서는 패밀리 운전자 제한 설정 및 고령 자녀 할인 특약 등을 온라인 상에서 다채롭게 연결하여 싼곳을 정렬해 내는 우량 순위를 구축하게 됩니다. 그러나 가족 구성원 중 한 명이라도 사소한 대인 충돌이나 대물 마찰 사고를 빈번하게 유발하여 사고건수별 특성요율이 적용되면 장기간 무사고 상태로 이룩해 두었던 최고 할인의 우대 성벽이 순식간에 허물어지며 고가의 유지비 증가를 수용해야만 하는 곤경에 내몰릴 수 있습니다.
+            </p>
+
+            <h3>넷째, 첨단 기술을 대변하는 테슬라와 넥쏘 등 친환경 동력 차종</h3>
+            <p>
+                글로벌 환경 정책에 조응하는 테슬라 모델3, 모델Y 전기차를 비롯하여 독자적인 수소 동력 기관 시스템을 장착한 현대자동차 넥쏘 등 친환경차들은 일반 내연기관 차량과는 전적으로 이질적인 위험 요율을 가지고 움직입니다. 해당 차종들은 정밀 제어 부품 및 특수 고전압 배터리 모듈의 교체 비용 단가가 워낙 높고 전용 정비 기반 인프라가 한정적이어서 기본적인 자차 담보 견적 수준부터 무려 30퍼센트 이상 높은 가격대를 고수합니다. 가벼운 범퍼 교환이나 하부 스침만으로도 물적 한도액인 200만 원 장벽을 순식간에 뛰어넘어 심각한 할증과 고액의 자기부담금을 동시에 요구하는 고유의 장단점이 확실하므로, 가입 당시에 전문 상담 업체를 통한 고도의 맞춤 설계를 수령하는 대응 전략이 가장 안전합니다.
+            </p>
+        </section>
+
+        <section id="community-tips">
+            <h2>대중교통 커뮤니티 실제 유저 조언과 AI 기술의 스마트한 활용법</h2>
+            <p>
+                국내 대형 자동차 온라인 포털 공간인 디시, 보배드림, 펨코, 에펨코리아의 보험 정보 게시판 내부에서 벌어지는 핵심 논의를 수집해 보면, 사고 발생 직후 당황하여 무조건적으로 사고 청구를 이행하는 것은 장기적으로 엄청난 손실을 야기하는 그릇된 판단이라고 한목소리로 지적합니다. 경미한 단독 주차장 연석 접촉 등의 수리 비용이 70만 원 안팎으로 발생했을 경우에는 차라리 전액 내돈내산으로 직접 사비를 들여 정비를 완료하거나, 이미 처리한 사고일지라도 차후 연간 갱신 시점에 보험금 수령액 전액을 반환하여 사고를 무효화하는 요율 관리가 장기적으로 3년간 절약하게 될 할인 이득액을 초과하지 않는 최고의 장점을 보여준다는 분석이 유저들의 오랜 후기 결과로 증명되어 있습니다.
+            </p>
+            <p>
+                이와 더불어 정보의 고도화가 가속화되는 현대에는 과거처럼 일일이 다이렉트 업체의 견적 웹페이지들을 순회하는 물리적 한계를 극복하기 시작했습니다. 챗지피티(ChatGPT)와 제미나이(Gemini) 같은 탁월한 대형 언어 모델 기반의 AI 기술을 내장한 고도의 스마트 차량 보험료 계산기 어플 앱의 보급이 크게 일상화되었습니다. 이 인공지능 기반의 가상 컨설팅 프로그램들은 개인이 처한 다양한 사고 점수 상황과 연령 조건을 간편하게 입력하는 즉시, 이듬해 할증률과 3년간 축적될 경제적 손실을 정밀한 수치로 제시하여 운전자의 이성적 의사결정을 보좌하고 있습니다.
+            </p>
+            <div class="highlight-box">
+                <p>온라인 비교 플랫폼들이 제공하는 다양한 사은품 증정, 현금지원, 신규 상품권 배포, 정부 연계 보조금 지원금 제공 등의 달콤한 프로모션 혜택에 흔들리지 마십시오. 단기성 혜택보다 자신의 등급을 온전히 보존하여 기본 등급의 요율 자체를 장기적으로 안정시키는 것이 수백만 원에 이르는 가치를 아끼는 영리한 지름길입니다.</p>
+            </div>
+            <p>
+                현재는 네이버, 구글, 유튜브와 같은 검색 및 비디오 채널뿐 아니라 트위터, 인스타그램, 페이스북, 카카오톡, 토스 등 주요 모바일 메신저 및 금융 인프라 제휴 앱을 통한 즉각적인 통합 조회 서비스가 활성화되어 있어 누구나 쉽게 접근이 가능합니다. 이 모든 미디어에서 제공하는 전문 업체의 정보를 바탕으로 주기적인 자가 요율 진단을 수행하는 자기 주도적 소비 태도가 그 어느 때보다 중요한 시점입니다.
+            </p>
+        </section>
+
+        <section id="trust-sites" class="external-links">
+            <h2>신뢰성 확보를 위한 공인 외부 금융 및 정책 참고 처 정보</h2>
+            <p>
+                자동차 보험 사고 할증 제도에 관련된 가장 정확하고 법률에 입각한 정보는 아래의 정식 기관 공식 채널을 통하여 투명하게 추적 및 보완하실 수 있습니다.
+            </p>
+            <ul>
+                <li><a href="https://bohumpromotionb.cafe24.com/" target="_blank" rel="nofollow noopener">자동차 사고 할증 및 금융 요율 계산 전문 포털 가이드</a></li>
+                <li><a href="https://namu.wiki/w/%EC%9E%90%EB%8F%99%EC%B0%A8%EB%B3%B4%ED%97%98" target="_blank" rel="nofollow noopener">나무위키 자동차보험 정의 및 약관 상세 설명</a></li>
+                <li><a href="https://www.fss.or.kr" target="_blank" rel="nofollow noopener">금융감독원 공식 소비자 보호 및 표준약관 안내 공시실</a></li>
+                <li><a href="https://www.law.go.kr" target="_blank" rel="nofollow noopener">법제처 국가법령정보센터 자동차손해배상 보장법 규정</a></li>
+                <li><a href="https://www.kidi.or.kr" target="_blank" rel="nofollow noopener">보험개발원 통계 정보 데이터 및 등급 기준 요율 분석 자료</a></li>
+            </ul>
+        </section>
+
+        <section id="consulting-form">
+            <h2>보험 사고 할증 분석 및 유지비 최적화 전문 맞춤 상담 견적 신청</h2>
+            <p>
+                본인의 실제 요율과 사고 기록을 바탕으로 장기적인 지출 경감 대책을 제안받고 싶으신 운전자분들께서는 아래 상세 정보를 면밀하게 입력해 주십시오. 2026년 기준 실시간 변경 정책 데이터베이스를 기반으로 한 체계적인 정밀 보고서를 신속히 발송해 드리겠습니다.
+            </p>
+            
+            <form action="/submit-consultation" method="POST">
+                <label for="input-name">성명 및 한글 실명 입력</label>
+                <input type="text" id="input-name" name="user_name" required placeholder="예시: 홍길동">
+                
+                <label for="input-phone">휴대전화 연락처</label>
+                <input type="tel" id="input-phone" name="user_phone" required placeholder="010-0000-0000 형태로 숫자를 정확히 채워주세요">
+
+                <label for="select-model">소유 운용 중인 자동차 모델 종류</label>
+                <select id="select-model" name="car_model" required>
+                    <option value="">보유하신 차종 브랜드를 지정하세요</option>
+                    <option value="avante">현대 아반떼 (준중형 세단군)</option>
+                    <option value="grandeur">현대 그랜저 (준대형 고급 세단군)</option>
+                    <option value="genesis">제네시스 G80 (럭셔리 프리미미엄 세단군)</option>
+                    <option value="sorento">기아 쏘렌토 (중형 패밀리 SUV군)</option>
+                    <option value="carnival">기아 카니발 (다인승 다목적 RV군)</option>
+                    <option value="tesla">테슬라 모델3 / 모델Y (고전압 수입 전기차 제품군)</option>
+                    <option value="nexo">현대 넥쏘 (수소 연료 전지 친환경 차종)</option>
+                    <option value="other">그 외 기타 수입 내연기관 및 하이브리드 수리비 우려 차종</option>
+                </select>
+
+                <label for="select-age">가입자 연령 기준 세부 구분</label>
+                <select id="select-age" name="user_age_group" required>
+                    <option value="">만 나이 기준 해당 나이대를 지정하세요</option>
+                    <option value="20s">만 20세 이상 만 26세 미만 (초기 진입 사회초년생)</option>
+                    <option value="26s">만 26세 이상 만 30세 미만 (연령 할인 신규 개시 구간)</option>
+                    <option value="30s">만 30세 이상 만 43세 미만 (안정적인 30대 주력 운행 구간)</option>
+                    <option value="40s">만 43세 이상 만 50세 미만 (자녀 동승 및 온전한 할인 구간)</option>
+                    <option value="50s">만 50세 이상 만 65세 이하 (풍부한 장기 무사고 경력 구간)</option>
+                </select>
+
+                <label for="input-experience">공식 가입 경력 인정 연수</label>
+                <input type="number" id="input-experience" name="driving_years" required placeholder="처음 신규로 신설하는 운전자는 0을 입력해 주세요" min="0" max="60">
+
+                <label for="select-limit">설정 가입된 물적사고 할증기준금액 구간</label>
+                <select id="select-limit" name="surcharge_limit" required>
+                    <option value="">현재 증권에 표시된 금액을 선택하세요</option>
+                    <option value="50">50만 원 (극도의 소액 실무 설정형)</option>
+                    <option value="100">100만 원 (실속 절약 기준형)</option>
+                    <option value="150">150만 원 (중간 한도 임의 설정형)</option>
+                    <option value="200">200만 원 (가장 지지 비중이 두터운 표준형)</option>
+                </select>
+
+                <label for="select-accident">최근 3년 이내 누적 접촉 및 중대 사고 빈도</label>
+                <select id="select-accident" name="accident_history" required>
+                    <option value="">지난 3개년 동안의 사고 내역을 기술해 주세요</option>
+                    <option value="none">단 1건도 없음 (자랑스러운 완전 무사고)</option>
+                    <option value="1_small">대물 수리비 200만 원 미만의 경미한 파손 대처 1건</option>
+                    <option value="1_large">200만 원 대물 초과 수리 또는 대인 접수 피해 1건</option>
+                    <option value="multi">크기에 구애받지 않고 복수 이상 빈번하게 청구한 2건 이상의 사고</option>
+                </select>
+
+                <label for="select-method">정밀 보고서 전달 통로 기본 선택</label>
+                <select id="select-method" name="contact_method" required>
+                    <option value="">희망하시는 비대면 전달 방식을 정해 주세요</option>
+                    <option value="phone">지정 유선 번호를 통한 상세 보이스 가이드 및 설명</option>
+                    <option value="kakao">카카오톡 인터페이스를 연동한 모바일 문서 열람</option>
+                    <option value="email">정밀 구조 분석 PDF 보고서 전자우편 수신</option>
+                </select>
+
+                <label for="text-memo">개별 운전 환경 내역 및 상세 고민 요약 기재 (선택)</label>
+                <textarea id="text-memo" name="user_memo" rows="5" placeholder="예시: 얼마 전 아반떼 범퍼 파손으로 대물 120만 원이 처리되었는데, 자비 환입을 진행해야 다음 갱신 할인율 보존에 더 이득일지 정밀 비교를 원합니다. 30대 부부 한정 적용 기준과 다이렉트 견적 차이도 알려주세요."></textarea>
+
+                <div class="cta-container">
+                    <button type="submit" class="btn-cta" style="width: 100%;">맞춤형 실시간 사고 할증 분석 및 요율 최적화 컨설팅 신청</button>
+                </div>
+            </form>
+        </section>
+    </div>
+  
